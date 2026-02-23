@@ -4,11 +4,143 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello!</title>
+    <style>
+        h1 {
+            color: red;
+            background-color: yellow;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        p {
+            font-size: 2rem;
+            font-weight: 400;
+            color: skyblue;
+        }
+
+        span {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: orange;
+            background-color: yellow;
+        }
+
+        #name {
+            font-size: 40px;
+        }
+
+        label {
+            font-size: 30px;
+        }
+
+        li.A {
+            color: purple;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Hi!</h1>
-    <p>これはサンプルのWebページです。</p>
+    <h1>これはh1タグのサンプルです。</h1>
+    <h2>これはh2タグのサンプルです。</h2>
+    <h3>これはh3タグのサンプルです。</h3>
+    <h4>これはh4タグのサンプルです。</h4>
+    <h5>これはh5タグのサンプルです。</h5>
+    <h6>これはh6タグのサンプルです。</h6>
+    <p>途中で改行<br>できます。</p>
+    <p>別の段落と改行は違います。</p>
+    <p>これは段落1です。</p>
+    <p>これは段落2です。</p>
+    <p>これは<span>spanタグ</span>のサンプルです。</p>
+    <pre>def func():
+        print("Hello World")
+    </pre>
+    <a href="https://www.google.com">Google</a>
+    <p>これは</p><a href="https://www.google.com">Google</a>へのリンクです。</p>
+
+    <ol>
+        <li class="A">項目1</li>
+        <li>項目2</li>
+        <li>項目3</li>
+    </ol>
+    <ul>
+        <li>項目あ</li>
+        <li>項目い</li>
+        <li>項目う</li>
+    </ul>
+    <dl>
+        <dt>用語あ</dt>
+        <dd>説明あ</dd>
+        <dt>用語い</dt>
+        <dd>説明い</dd>
+        <dt>用語う</dt>
+        <dd>説明う</dd>
+    </dl>
+    <table>
+        <thead>
+            <tr>
+                <th>品名</th>
+                <th>個数</th>
+                <th>金額</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>りんご</td>
+                <td>3個</td>
+                <td>900円</td>
+            </tr>
+            <tr>
+                <td>みかん</td>
+                <td>5個</td>
+                <td>500円</td>
+            </tr>
+        </tbody>
+    </table>
+    <form>
+        <div>
+            <label for="name">名前:</label>
+            <input type="text">
+            <input type="text" id="name" size="40">
+        </div>
+        <div>
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label for="password">パスワード:</label>
+            <input type="password" id="password">
+        </div>
+        <div>
+            <label for="message">メッセージ:</label>
+            <textarea id="message"></textarea>
+        </div>
+        <div>
+            <label for="gender">性別:</label>
+            <input type="radio" id="male" name="gender">
+            <label for="male">男性</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">女性</label>
+        </div>
+        <div>
+            <label for="hobbies">趣味:</label>
+            <input type="checkbox" id="hobbies" name="hobbies">
+            <label for="hobbies">ギター</label>
+            <input type="checkbox" id="hobbies" name="hobbies">
+            <label for="hobbies">読書</label>
+        </div>
+        <div>
+            <label for="country">国:</label>
+            <select id="country">
+                <option value="japan">日本</option>
+                <option value="usa">アメリカ</option>
+                <option value="china">中国</option>
+            </select>
+        </div>
+        <div>
+            <label for="submit">送信:</label>
+            <input type="submit">
+        </div>
+    </form>
 </body>
 
 </html>
