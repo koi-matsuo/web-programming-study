@@ -15,7 +15,7 @@
         p {
             font-size: 2rem;
             font-weight: 400;
-            color: skyblue;
+            color: magenta
         }
 
         span {
@@ -40,6 +40,21 @@
 </head>
 
 <body>
+    <div class="container">
+        <p>
+            <script>
+                document.write("Hi"+"<br>");
+                let a = 12330;
+                let tax_rate = 0.1;
+                let total = a * (1 + tax_rate);
+                document.write(total+"円"+"<br>");
+                document.write(Math.round(total)+"円"+"<br>");
+                document.write(Math.ceil(total)+"円"+"<br>");
+                document.write(Math.floor(total)+"円"+"<br>");
+                document.write(Math.trunc(total)+"円"+"<br>");
+            </script>
+        </p>
+    </div>
     <h1>これはh1タグのサンプルです。</h1>
     <h2>これはh2タグのサンプルです。</h2>
     <h3>これはh3タグのサンプルです。</h3>
